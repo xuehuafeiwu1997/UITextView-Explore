@@ -50,7 +50,20 @@
     }];
     
     
-    [self addToolBarForKeyBoard];
+//    [self addToolBarForKeyBoard];//键盘上添加一个图片，点击图片，键盘消失
+    [self addToolBarDoneButton];//在键盘上添加一个按钮，点击按钮，键盘消失
+    
+}
+
+//在弹出的键盘上面加一个view来放置退出键盘的Done按钮
+- (void)addToolBarDoneButton {
+    UIToolbar *topView = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, 320, 30)];
+    [topView setBarStyle:UIBarStyleDefault];
+    UIBarButtonItem *btnSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
+    UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithTitle:@"完成" style:UIBarButtonItemStyleDone target:self action:@selector(dismissKeyBoard)];
+    NSArray *buttonsArray = [NSArray arrayWithObjects:btnSpace, doneButton,nil];
+    [topView setItems:buttonsArray];
+    [self.textView setInputAccessoryView:topView];
 }
 
 - (void)addToolBarForKeyBoard {
@@ -101,17 +114,17 @@
 }
 
 #pragma mark - UITextViewDelegate
-- (void)textViewDidBeginEditing:(UITextView *)textView {
-    if ([textView.text isEqualToString:@"这是占位文字"]) {
-        textView.text = @"";
-    }
-}
-
-- (void)textViewDidEndEditing:(UITextView *)textView {
-    if (textView.text.length < 1) {
-        textView.text = @"这是占位文字";
-    }
-}
+//- (void)textViewDidBeginEditing:(UITextView *)textView {
+//    if ([textView.text isEqualToString:@"这是占位文字"]) {
+//        textView.text = @"";
+//    }
+//}
+//
+//- (void)textViewDidEndEditing:(UITextView *)textView {
+//    if (textView.text.length < 1) {
+//        textView.text = @"这是占位文字";
+//    }
+//}
 
 - (void)textViewDidChange:(UITextView *)textView {
     if (textView.text.length > 0) {
@@ -130,7 +143,7 @@
     _textView.textColor = [UIColor whiteColor];
     _textView.backgroundColor = [UIColor grayColor];
     _textView.textContainerInset = UIEdgeInsetsMake(25, 10, 10, 10);
-    _textView.text = @"这是占位文字";
+//    _textView.text = @"这是占位文字";
     _textView.delegate = self;
     return _textView;
 }
