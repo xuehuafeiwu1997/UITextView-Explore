@@ -13,6 +13,7 @@
 
 @property (nonatomic, strong) UITextView *textView;
 @property (nonatomic, strong) UIImageView *imageView;
+@property (nonatomic, strong) UILabel *placeHolder;
 
 @end
 
@@ -31,6 +32,15 @@
         make.left.right.top.equalTo(@0);
         make.height.equalTo(@300);
     }];
+    
+    [self.textView addSubview:self.placeHolder];
+    [self.placeHolder mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.textView).offset(15);
+        make.top.equalTo(self.textView).offset(25);
+        make.width.greaterThanOrEqualTo(@0);
+        make.height.greaterThanOrEqualTo(@0);
+    }];
+    
     [self.view addSubview:self.imageView];
     [self.imageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.textView.mas_bottom).offset(20);
@@ -91,7 +101,11 @@
 }
 
 - (void)textViewDidChange:(UITextView *)textView {
-    
+    if (textView.text.length > 0) {
+        self.placeHolder.hidden = YES;
+    } else {
+        self.placeHolder.hidden = NO;
+    }
 }
 
 - (UITextView *)textView {
@@ -116,6 +130,19 @@
     _imageView.image = [self createNewImage];
     _imageView.contentMode = UIViewContentModeCenter;
     return _imageView;
+}
+
+- (UILabel *)placeHolder {
+    if (_placeHolder) {
+        return _placeHolder;
+    }
+    _placeHolder = [[UILabel alloc] initWithFrame:CGRectZero];
+    _placeHolder.font = [UIFont systemFontOfSize:18];
+    _placeHolder.textColor = [UIColor whiteColor];
+    _placeHolder.alpha = 0.1;
+    _placeHolder.text = @"这是默认文本";
+    _placeHolder.textAlignment = NSTextAlignmentLeft;
+    return _placeHolder;
 }
 
 @end
