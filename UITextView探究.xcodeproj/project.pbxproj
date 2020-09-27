@@ -16,6 +16,7 @@
 		B627B4D8252070FF00DED38A /* XMYPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = B627B4D7252070FF00DED38A /* XMYPlaceHolderTextView.m */; };
 		B627B4DB2520752400DED38A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B627B4DA2520752400DED38A /* FirstViewController.m */; };
 		B627B4DE25207B5B00DED38A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B627B4DD25207B5B00DED38A /* SecondViewController.m */; };
+		B627B4E125209FB300DED38A /* XMYPlaceHolderNewTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = B627B4E025209FB300DED38A /* XMYPlaceHolderNewTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		B627B4DA2520752400DED38A /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		B627B4DC25207B5B00DED38A /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		B627B4DD25207B5B00DED38A /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		B627B4DF25209FB300DED38A /* XMYPlaceHolderNewTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMYPlaceHolderNewTextView.h; sourceTree = "<group>"; };
+		B627B4E025209FB300DED38A /* XMYPlaceHolderNewTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMYPlaceHolderNewTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,8 @@
 				B627B4DA2520752400DED38A /* FirstViewController.m */,
 				B627B4D6252070FF00DED38A /* XMYPlaceHolderTextView.h */,
 				B627B4D7252070FF00DED38A /* XMYPlaceHolderTextView.m */,
+				B627B4DF25209FB300DED38A /* XMYPlaceHolderNewTextView.h */,
+				B627B4E025209FB300DED38A /* XMYPlaceHolderNewTextView.m */,
 				B627B4DC25207B5B00DED38A /* SecondViewController.h */,
 				B627B4DD25207B5B00DED38A /* SecondViewController.m */,
 				B627B4C925202A9A00DED38A /* Assets.xcassets */,
@@ -206,6 +211,7 @@
 				B627B4D8252070FF00DED38A /* XMYPlaceHolderTextView.m in Sources */,
 				B627B4C525202A9700DED38A /* ViewController.m in Sources */,
 				B627B4DB2520752400DED38A /* FirstViewController.m in Sources */,
+				B627B4E125209FB300DED38A /* XMYPlaceHolderNewTextView.m in Sources */,
 				B627B4BF25202A9700DED38A /* AppDelegate.m in Sources */,
 				B627B4D025202A9A00DED38A /* main.m in Sources */,
 			);
