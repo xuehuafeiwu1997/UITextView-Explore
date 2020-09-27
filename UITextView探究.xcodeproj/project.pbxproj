@@ -13,6 +13,8 @@
 		B627B4CA25202A9A00DED38A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B627B4C925202A9A00DED38A /* Assets.xcassets */; };
 		B627B4CD25202A9A00DED38A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B627B4CB25202A9A00DED38A /* LaunchScreen.storyboard */; };
 		B627B4D025202A9A00DED38A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B627B4CF25202A9A00DED38A /* main.m */; };
+		B627B4D8252070FF00DED38A /* XMYPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = B627B4D7252070FF00DED38A /* XMYPlaceHolderTextView.m */; };
+		B627B4DB2520752400DED38A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B627B4DA2520752400DED38A /* FirstViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,10 @@
 		B627B4CC25202A9A00DED38A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B627B4CE25202A9A00DED38A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B627B4CF25202A9A00DED38A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B627B4D6252070FF00DED38A /* XMYPlaceHolderTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMYPlaceHolderTextView.h; sourceTree = "<group>"; };
+		B627B4D7252070FF00DED38A /* XMYPlaceHolderTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMYPlaceHolderTextView.m; sourceTree = "<group>"; };
+		B627B4D92520752400DED38A /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		B627B4DA2520752400DED38A /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +54,6 @@
 				102D5239B8F0DC2E4ED58B7B /* Pods-UITextView探究.debug.xcconfig */,
 				8962B3C6099237E61B874A56 /* Pods-UITextView探究.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -85,6 +90,10 @@
 				B627B4BE25202A9700DED38A /* AppDelegate.m */,
 				B627B4C325202A9700DED38A /* ViewController.h */,
 				B627B4C425202A9700DED38A /* ViewController.m */,
+				B627B4D92520752400DED38A /* FirstViewController.h */,
+				B627B4DA2520752400DED38A /* FirstViewController.m */,
+				B627B4D6252070FF00DED38A /* XMYPlaceHolderTextView.h */,
+				B627B4D7252070FF00DED38A /* XMYPlaceHolderTextView.m */,
 				B627B4C925202A9A00DED38A /* Assets.xcassets */,
 				B627B4CB25202A9A00DED38A /* LaunchScreen.storyboard */,
 				B627B4CE25202A9A00DED38A /* Info.plist */,
@@ -188,7 +197,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B627B4D8252070FF00DED38A /* XMYPlaceHolderTextView.m in Sources */,
 				B627B4C525202A9700DED38A /* ViewController.m in Sources */,
+				B627B4DB2520752400DED38A /* FirstViewController.m in Sources */,
 				B627B4BF25202A9700DED38A /* AppDelegate.m in Sources */,
 				B627B4D025202A9A00DED38A /* main.m in Sources */,
 			);
