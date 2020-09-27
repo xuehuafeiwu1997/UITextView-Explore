@@ -33,13 +33,13 @@
         make.height.equalTo(@300);
     }];
     
-    [self.textView addSubview:self.placeHolder];
-    [self.placeHolder mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.textView).offset(15);
-        make.top.equalTo(self.textView).offset(25);
-        make.width.greaterThanOrEqualTo(@0);
-        make.height.greaterThanOrEqualTo(@0);
-    }];
+//    [self.textView addSubview:self.placeHolder];
+//    [self.placeHolder mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.equalTo(self.textView).offset(15);
+//        make.top.equalTo(self.textView).offset(25);
+//        make.width.greaterThanOrEqualTo(@0);
+//        make.height.greaterThanOrEqualTo(@0);
+//    }];
     
     [self.view addSubview:self.imageView];
     [self.imageView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -100,6 +100,19 @@
     [self.textView resignFirstResponder];
 }
 
+#pragma mark - UITextViewDelegate
+- (void)textViewDidBeginEditing:(UITextView *)textView {
+    if ([textView.text isEqualToString:@"这是占位文字"]) {
+        textView.text = @"";
+    }
+}
+
+- (void)textViewDidEndEditing:(UITextView *)textView {
+    if (textView.text.length < 1) {
+        textView.text = @"这是占位文字";
+    }
+}
+
 - (void)textViewDidChange:(UITextView *)textView {
     if (textView.text.length > 0) {
         self.placeHolder.hidden = YES;
@@ -117,6 +130,7 @@
     _textView.textColor = [UIColor whiteColor];
     _textView.backgroundColor = [UIColor grayColor];
     _textView.textContainerInset = UIEdgeInsetsMake(25, 10, 10, 10);
+    _textView.text = @"这是占位文字";
     _textView.delegate = self;
     return _textView;
 }
@@ -140,7 +154,7 @@
     _placeHolder.font = [UIFont systemFontOfSize:18];
     _placeHolder.textColor = [UIColor whiteColor];
     _placeHolder.alpha = 0.1;
-    _placeHolder.text = @"这是默认文本";
+    _placeHolder.text = @"这是占位文字";
     _placeHolder.textAlignment = NSTextAlignmentLeft;
     return _placeHolder;
 }
