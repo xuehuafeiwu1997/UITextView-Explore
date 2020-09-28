@@ -13,6 +13,7 @@
 #import "ThirdSolutionViewController.h"
 #import "FourthSolutionViewController.h"
 #import "FifthSolutionViewController.h"
+#import "InputLimitViewController.h"
 
 @interface MainViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -41,7 +42,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return 6;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -64,6 +65,10 @@
     }
     if (indexPath.row == 4) {
         cell.textLabel.text = @"使用运行时的特性解决占位文字问题";
+        return cell;
+    }
+    if (indexPath.row == 5) {
+        cell.textLabel.text = @"UITextView的输入限制实现";
         return cell;
     }
     return nil;
@@ -89,6 +94,9 @@
         [self.navigationController pushViewController:vc animated:YES];
     } else if (indexPath.row == 4) {
         FifthSolutionViewController *vc = [[FifthSolutionViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if (indexPath.row == 5) {
+        InputLimitViewController *vc = [[InputLimitViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

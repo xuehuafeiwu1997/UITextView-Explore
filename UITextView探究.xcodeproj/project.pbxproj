@@ -21,6 +21,7 @@
 		B627B5212521C1A400DED38A /* FourthSolutionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B627B5202521C1A400DED38A /* FourthSolutionViewController.m */; };
 		B627B5242521C2A600DED38A /* FifthSolutionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B627B5232521C2A600DED38A /* FifthSolutionViewController.m */; };
 		B627B5272521CF2E00DED38A /* UITextView+keyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = B627B5262521CF2E00DED38A /* UITextView+keyBoard.m */; };
+		B627B52A2521DBA900DED38A /* InputLimitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B627B5292521DBA900DED38A /* InputLimitViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,8 @@
 		B627B5232521C2A600DED38A /* FifthSolutionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FifthSolutionViewController.m; sourceTree = "<group>"; };
 		B627B5252521CF2E00DED38A /* UITextView+keyBoard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+keyBoard.h"; sourceTree = "<group>"; };
 		B627B5262521CF2E00DED38A /* UITextView+keyBoard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+keyBoard.m"; sourceTree = "<group>"; };
+		B627B5282521DBA900DED38A /* InputLimitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputLimitViewController.h; sourceTree = "<group>"; };
+		B627B5292521DBA900DED38A /* InputLimitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputLimitViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 				B627B5232521C2A600DED38A /* FifthSolutionViewController.m */,
 				B627B5252521CF2E00DED38A /* UITextView+keyBoard.h */,
 				B627B5262521CF2E00DED38A /* UITextView+keyBoard.m */,
+				B627B5282521DBA900DED38A /* InputLimitViewController.h */,
+				B627B5292521DBA900DED38A /* InputLimitViewController.m */,
 				B627B4C925202A9A00DED38A /* Assets.xcassets */,
 				B627B4CB25202A9A00DED38A /* LaunchScreen.storyboard */,
 				B627B4CE25202A9A00DED38A /* Info.plist */,
@@ -234,6 +239,7 @@
 				B627B51B2521BE6900DED38A /* SecondSolutionViewController.m in Sources */,
 				B627B4E125209FB300DED38A /* XMYPlaceHolderNewTextView.m in Sources */,
 				B627B5242521C2A600DED38A /* FifthSolutionViewController.m in Sources */,
+				B627B52A2521DBA900DED38A /* InputLimitViewController.m in Sources */,
 				B627B51E2521C07900DED38A /* ThirdSolutionViewController.m in Sources */,
 				B627B4BF25202A9700DED38A /* AppDelegate.m in Sources */,
 				B627B5182521BD2900DED38A /* FirstSolutionViewController.m in Sources */,
