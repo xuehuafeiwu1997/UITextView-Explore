@@ -7,6 +7,7 @@
 //第二种解决办法,使用UILabel添加在UITextView上，来实现占位文字的效果
 
 #import "SecondSolutionViewController.h"
+#import "UITextView+keyBoard.h"
 #import "Masonry.h"
 
 @interface SecondSolutionViewController ()<UITextViewDelegate>
@@ -57,6 +58,7 @@
     _textView.textColor = [UIColor whiteColor];
     _textView.backgroundColor = [UIColor greenColor];
     _textView.textContainerInset = UIEdgeInsetsMake(25, 10, 10, 10);
+    _textView.shouldShowHideKeyBoardBtn = YES;
     _textView.delegate = self;
     return _textView;
 }

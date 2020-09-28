@@ -1,8 +1,8 @@
 //
-//  FirstViewController.h
+//  UITextView+keyBoard.h
 //  UITextView探究
 //
-//  Created by 许明洋 on 2020/9/27.
+//  Created by 许明洋 on 2020/9/28.
 //  Copyright © 2020 许明洋. All rights reserved.
 //
 
@@ -10,7 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FirstViewController : UIViewController
+@interface UITextView (keyBoard)
+
+@property (nonatomic, assign) BOOL shouldShowHideKeyBoardBtn;
 
 @end
 

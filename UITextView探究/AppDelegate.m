@@ -7,10 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
-#import "FirstViewController.h"
-#import "SecondViewController.h"
-#import "ThirdViewController.h"
 #import "MainViewController.h"
 
 @interface AppDelegate ()
@@ -25,10 +21,6 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyAndVisible];
-//    ViewController *vc = [[ViewController alloc] init];
-//    FirstViewController *vc = [[FirstViewController alloc] init];
-//    SecondViewController *vc = [[SecondViewController alloc] init];
-//    ThirdViewController *vc = [[ThirdViewController alloc] init];
     MainViewController *vc = [[MainViewController alloc] init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = nav;

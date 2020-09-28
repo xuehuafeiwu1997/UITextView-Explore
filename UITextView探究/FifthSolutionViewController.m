@@ -7,6 +7,7 @@
 //使用运行时来解决UITextView的占位文字显示问题
 
 #import "FifthSolutionViewController.h"
+#import "UITextView+keyBoard.h"
 #import <objc/runtime.h>
 #import <objc/message.h>
 
@@ -38,6 +39,7 @@
 
 - (void)setupTextView {
     UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 300)];
+    textView.shouldShowHideKeyBoardBtn = YES;
     [textView setBackgroundColor:[UIColor greenColor]];
     [textView setFont:[UIFont systemFontOfSize:18.f]];
     [self.view addSubview:textView];

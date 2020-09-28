@@ -8,6 +8,7 @@
 
 #import "FirstSolutionViewController.h"
 #import "Masonry.h"
+#import "UITextView+keyBoard.h"
 
 @interface FirstSolutionViewController ()<UITextViewDelegate>
 
@@ -56,6 +57,7 @@
     _textView.textContainerInset = UIEdgeInsetsMake(25, 10, 10, 10);
     _textView.text = @"请输入相应的内容";
     _textView.delegate = self;
+    _textView.shouldShowHideKeyBoardBtn = YES;
     return _textView;
 }
 

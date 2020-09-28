@@ -8,6 +8,7 @@
 
 #import "FourthSolutionViewController.h"
 #import "XMYPlaceHolderNewTextView.h"
+#import "UITextView+keyBoard.h"
 #import "Masonry.h"
 
 @interface FourthSolutionViewController ()
@@ -43,6 +44,7 @@
     _textView.placeHolder = @"请输入相应的内容";
     _textView.placeHolderColor = [UIColor lightGrayColor];
     _textView.labelFont = [UIFont systemFontOfSize:18];
+    _textView.shouldShowHideKeyBoardBtn = YES;
     return _textView;
 }
 
