@@ -17,6 +17,12 @@
 		B627B4DB2520752400DED38A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B627B4DA2520752400DED38A /* FirstViewController.m */; };
 		B627B4DE25207B5B00DED38A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B627B4DD25207B5B00DED38A /* SecondViewController.m */; };
 		B627B4E125209FB300DED38A /* XMYPlaceHolderNewTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = B627B4E025209FB300DED38A /* XMYPlaceHolderNewTextView.m */; };
+		B627B4EA2520AE5B00DED38A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B627B4E92520AE5B00DED38A /* MainViewController.m */; };
+		B627B5182521BD2900DED38A /* FirstSolutionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B627B5172521BD2900DED38A /* FirstSolutionViewController.m */; };
+		B627B51B2521BE6900DED38A /* SecondSolutionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B627B51A2521BE6900DED38A /* SecondSolutionViewController.m */; };
+		B627B51E2521C07900DED38A /* ThirdSolutionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B627B51D2521C07900DED38A /* ThirdSolutionViewController.m */; };
+		B627B5212521C1A400DED38A /* FourthSolutionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B627B5202521C1A400DED38A /* FourthSolutionViewController.m */; };
+		B627B5242521C2A600DED38A /* FifthSolutionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B627B5232521C2A600DED38A /* FifthSolutionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +46,18 @@
 		B627B4DD25207B5B00DED38A /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		B627B4DF25209FB300DED38A /* XMYPlaceHolderNewTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMYPlaceHolderNewTextView.h; sourceTree = "<group>"; };
 		B627B4E025209FB300DED38A /* XMYPlaceHolderNewTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMYPlaceHolderNewTextView.m; sourceTree = "<group>"; };
+		B627B4E82520AE5B00DED38A /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		B627B4E92520AE5B00DED38A /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		B627B5162521BD2900DED38A /* FirstSolutionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstSolutionViewController.h; sourceTree = "<group>"; };
+		B627B5172521BD2900DED38A /* FirstSolutionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstSolutionViewController.m; sourceTree = "<group>"; };
+		B627B5192521BE6900DED38A /* SecondSolutionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondSolutionViewController.h; sourceTree = "<group>"; };
+		B627B51A2521BE6900DED38A /* SecondSolutionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondSolutionViewController.m; sourceTree = "<group>"; };
+		B627B51C2521C07900DED38A /* ThirdSolutionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdSolutionViewController.h; sourceTree = "<group>"; };
+		B627B51D2521C07900DED38A /* ThirdSolutionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdSolutionViewController.m; sourceTree = "<group>"; };
+		B627B51F2521C1A400DED38A /* FourthSolutionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourthSolutionViewController.h; sourceTree = "<group>"; };
+		B627B5202521C1A400DED38A /* FourthSolutionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourthSolutionViewController.m; sourceTree = "<group>"; };
+		B627B5222521C2A600DED38A /* FifthSolutionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FifthSolutionViewController.h; sourceTree = "<group>"; };
+		B627B5232521C2A600DED38A /* FifthSolutionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FifthSolutionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,14 +112,26 @@
 			children = (
 				B627B4BD25202A9700DED38A /* AppDelegate.h */,
 				B627B4BE25202A9700DED38A /* AppDelegate.m */,
+				B627B4E82520AE5B00DED38A /* MainViewController.h */,
+				B627B4E92520AE5B00DED38A /* MainViewController.m */,
+				B627B5162521BD2900DED38A /* FirstSolutionViewController.h */,
+				B627B5172521BD2900DED38A /* FirstSolutionViewController.m */,
+				B627B5192521BE6900DED38A /* SecondSolutionViewController.h */,
+				B627B51A2521BE6900DED38A /* SecondSolutionViewController.m */,
+				B627B4D6252070FF00DED38A /* XMYPlaceHolderTextView.h */,
+				B627B4D7252070FF00DED38A /* XMYPlaceHolderTextView.m */,
+				B627B51C2521C07900DED38A /* ThirdSolutionViewController.h */,
+				B627B51D2521C07900DED38A /* ThirdSolutionViewController.m */,
+				B627B4DF25209FB300DED38A /* XMYPlaceHolderNewTextView.h */,
+				B627B4E025209FB300DED38A /* XMYPlaceHolderNewTextView.m */,
+				B627B51F2521C1A400DED38A /* FourthSolutionViewController.h */,
+				B627B5202521C1A400DED38A /* FourthSolutionViewController.m */,
+				B627B5222521C2A600DED38A /* FifthSolutionViewController.h */,
+				B627B5232521C2A600DED38A /* FifthSolutionViewController.m */,
 				B627B4C325202A9700DED38A /* ViewController.h */,
 				B627B4C425202A9700DED38A /* ViewController.m */,
 				B627B4D92520752400DED38A /* FirstViewController.h */,
 				B627B4DA2520752400DED38A /* FirstViewController.m */,
-				B627B4D6252070FF00DED38A /* XMYPlaceHolderTextView.h */,
-				B627B4D7252070FF00DED38A /* XMYPlaceHolderTextView.m */,
-				B627B4DF25209FB300DED38A /* XMYPlaceHolderNewTextView.h */,
-				B627B4E025209FB300DED38A /* XMYPlaceHolderNewTextView.m */,
 				B627B4DC25207B5B00DED38A /* SecondViewController.h */,
 				B627B4DD25207B5B00DED38A /* SecondViewController.m */,
 				B627B4C925202A9A00DED38A /* Assets.xcassets */,
@@ -208,11 +238,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				B627B4DE25207B5B00DED38A /* SecondViewController.m in Sources */,
+				B627B5212521C1A400DED38A /* FourthSolutionViewController.m in Sources */,
 				B627B4D8252070FF00DED38A /* XMYPlaceHolderTextView.m in Sources */,
+				B627B4EA2520AE5B00DED38A /* MainViewController.m in Sources */,
+				B627B51B2521BE6900DED38A /* SecondSolutionViewController.m in Sources */,
 				B627B4C525202A9700DED38A /* ViewController.m in Sources */,
 				B627B4DB2520752400DED38A /* FirstViewController.m in Sources */,
 				B627B4E125209FB300DED38A /* XMYPlaceHolderNewTextView.m in Sources */,
+				B627B5242521C2A600DED38A /* FifthSolutionViewController.m in Sources */,
+				B627B51E2521C07900DED38A /* ThirdSolutionViewController.m in Sources */,
 				B627B4BF25202A9700DED38A /* AppDelegate.m in Sources */,
+				B627B5182521BD2900DED38A /* FirstSolutionViewController.m in Sources */,
 				B627B4D025202A9A00DED38A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

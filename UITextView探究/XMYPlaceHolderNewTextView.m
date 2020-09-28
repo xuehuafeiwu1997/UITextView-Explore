@@ -54,8 +54,8 @@
         return _label;
     }
     _label = [[UILabel alloc] initWithFrame:CGRectMake(5, 8, CGRectGetWidth(self.bounds) - 10, 15)];
-    _label.font = [UIFont systemFontOfSize:15];
-    _label.textColor = [UIColor grayColor];
+    _label.font = [UIFont systemFontOfSize:18];
+    _label.textColor = [UIColor lightGrayColor];
     _label.textAlignment = NSTextAlignmentLeft;
     _label.text = @"此处输入默认占位文字";
     return _label;
