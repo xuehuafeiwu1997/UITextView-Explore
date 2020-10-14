@@ -20,7 +20,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         [self addSubview:self.label];
-        //使用通知监听文字改变，如果不使用这个，输入文字时不会调用drawRect方法
+        //使用通知监听文字改变
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textDidChange:) name:UITextViewTextDidChangeNotification object:nil];
     }
     return self;
@@ -32,7 +32,6 @@
     } else {
         self.label.hidden = NO;
     }
-//    [self setNeedsDisplay];
 }
 
 - (void)layoutSubviews {
@@ -42,18 +41,13 @@
 
 - (void)drawRect:(CGRect)rect {
     [super drawRect:rect];
-//    if (self.hasText) {
-//        self.label.hidden = YES;
-//        return;
-//    }
-//    self.label.hidden = NO;
 }
 
 - (UILabel *)label {
     if (_label) {
         return _label;
     }
-    _label = [[UILabel alloc] initWithFrame:CGRectMake(5, 8, CGRectGetWidth(self.bounds) - 10, 15)];
+    _label = [[UILabel alloc] initWithFrame:CGRectMake(15, 25, CGRectGetWidth(self.bounds) - 20, 15)];
     _label.font = [UIFont systemFontOfSize:18];
     _label.textColor = [UIColor lightGrayColor];
     _label.textAlignment = NSTextAlignmentLeft;

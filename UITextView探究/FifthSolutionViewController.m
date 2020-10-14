@@ -40,6 +40,7 @@
 - (void)setupTextView {
     UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 300)];
     textView.shouldShowHideKeyBoardBtn = YES;
+    textView.contentInset = UIEdgeInsetsMake(25, 10, 10, 10);
     [textView setBackgroundColor:[UIColor greenColor]];
     [textView setFont:[UIFont systemFontOfSize:18.f]];
     [self.view addSubview:textView];

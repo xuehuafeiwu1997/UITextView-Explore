@@ -41,6 +41,7 @@
     _textView.backgroundColor = [UIColor greenColor];
     _textView.font = [UIFont systemFontOfSize:18.f];
     _textView.textColor = [UIColor whiteColor];
+    _textView.textContainerInset = UIEdgeInsetsMake(25, 10, 10, 10);
     _textView.placeHolder = @"请输入相应的内容";
     _textView.placeHolderColor = [UIColor lightGrayColor];
     _textView.labelFont = [UIFont systemFontOfSize:18];
