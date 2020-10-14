@@ -40,8 +40,8 @@
     attrs[NSForegroundColorAttributeName] = self.placeHolderColor;
     
     //画文字
-    rect.origin.x = 5;
-    rect.origin.y = 8;
+    rect.origin.x = 15;
+    rect.origin.y = 25;
     rect.size.width -= 2 * rect.origin.x;
     [self.placeHolder drawInRect:rect withAttributes:attrs];
 }
