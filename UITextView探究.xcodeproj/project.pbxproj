@@ -110,36 +110,92 @@
 		B627B4BC25202A9700DED38A /* UITextView探究 */ = {
 			isa = PBXGroup;
 			children = (
+				B6CC4D6A2537159100C28BB7 /* 输入限制实现 */,
+				B6CC4D692537157A00C28BB7 /* 键盘上添加完成按钮 */,
+				B6CC4D672537155600C28BB7 /* 运行时特性实现 */,
+				B6CC4D662537153700C28BB7 /* 第二种自定义实现 */,
+				B6CC4D652537151B00C28BB7 /* 第一种自定义实现 */,
+				B6CC4D642537150900C28BB7 /* 添加UILabel实现 */,
+				B6CC4D63253714F100C28BB7 /* 开始编辑和结束编辑协议实现 */,
 				B627B4BD25202A9700DED38A /* AppDelegate.h */,
 				B627B4BE25202A9700DED38A /* AppDelegate.m */,
 				B627B4E82520AE5B00DED38A /* MainViewController.h */,
 				B627B4E92520AE5B00DED38A /* MainViewController.m */,
-				B627B5162521BD2900DED38A /* FirstSolutionViewController.h */,
-				B627B5172521BD2900DED38A /* FirstSolutionViewController.m */,
-				B627B5192521BE6900DED38A /* SecondSolutionViewController.h */,
-				B627B51A2521BE6900DED38A /* SecondSolutionViewController.m */,
-				B627B4D6252070FF00DED38A /* XMYPlaceHolderTextView.h */,
-				B627B4D7252070FF00DED38A /* XMYPlaceHolderTextView.m */,
-				B627B51C2521C07900DED38A /* ThirdSolutionViewController.h */,
-				B627B51D2521C07900DED38A /* ThirdSolutionViewController.m */,
-				B627B4DF25209FB300DED38A /* XMYPlaceHolderNewTextView.h */,
-				B627B4E025209FB300DED38A /* XMYPlaceHolderNewTextView.m */,
-				B627B51F2521C1A400DED38A /* FourthSolutionViewController.h */,
-				B627B5202521C1A400DED38A /* FourthSolutionViewController.m */,
-				B627B5222521C2A600DED38A /* FifthSolutionViewController.h */,
-				B627B5232521C2A600DED38A /* FifthSolutionViewController.m */,
-				B6CC4D60253710E700C28BB7 /* CustomLabel.h */,
-				B6CC4D61253710E700C28BB7 /* CustomLabel.m */,
-				B627B5252521CF2E00DED38A /* UITextView+keyBoard.h */,
-				B627B5262521CF2E00DED38A /* UITextView+keyBoard.m */,
-				B627B5282521DBA900DED38A /* InputLimitViewController.h */,
-				B627B5292521DBA900DED38A /* InputLimitViewController.m */,
 				B627B4C925202A9A00DED38A /* Assets.xcassets */,
 				B627B4CB25202A9A00DED38A /* LaunchScreen.storyboard */,
 				B627B4CE25202A9A00DED38A /* Info.plist */,
 				B627B4CF25202A9A00DED38A /* main.m */,
 			);
 			path = "UITextView探究";
+			sourceTree = "<group>";
+		};
+		B6CC4D63253714F100C28BB7 /* 开始编辑和结束编辑协议实现 */ = {
+			isa = PBXGroup;
+			children = (
+				B627B5162521BD2900DED38A /* FirstSolutionViewController.h */,
+				B627B5172521BD2900DED38A /* FirstSolutionViewController.m */,
+			);
+			path = "开始编辑和结束编辑协议实现";
+			sourceTree = "<group>";
+		};
+		B6CC4D642537150900C28BB7 /* 添加UILabel实现 */ = {
+			isa = PBXGroup;
+			children = (
+				B627B5192521BE6900DED38A /* SecondSolutionViewController.h */,
+				B627B51A2521BE6900DED38A /* SecondSolutionViewController.m */,
+			);
+			path = "添加UILabel实现";
+			sourceTree = "<group>";
+		};
+		B6CC4D652537151B00C28BB7 /* 第一种自定义实现 */ = {
+			isa = PBXGroup;
+			children = (
+				B627B4D6252070FF00DED38A /* XMYPlaceHolderTextView.h */,
+				B627B4D7252070FF00DED38A /* XMYPlaceHolderTextView.m */,
+				B627B51C2521C07900DED38A /* ThirdSolutionViewController.h */,
+				B627B51D2521C07900DED38A /* ThirdSolutionViewController.m */,
+			);
+			path = "第一种自定义实现";
+			sourceTree = "<group>";
+		};
+		B6CC4D662537153700C28BB7 /* 第二种自定义实现 */ = {
+			isa = PBXGroup;
+			children = (
+				B627B4DF25209FB300DED38A /* XMYPlaceHolderNewTextView.h */,
+				B627B4E025209FB300DED38A /* XMYPlaceHolderNewTextView.m */,
+				B627B51F2521C1A400DED38A /* FourthSolutionViewController.h */,
+				B627B5202521C1A400DED38A /* FourthSolutionViewController.m */,
+			);
+			path = "第二种自定义实现";
+			sourceTree = "<group>";
+		};
+		B6CC4D672537155600C28BB7 /* 运行时特性实现 */ = {
+			isa = PBXGroup;
+			children = (
+				B627B5222521C2A600DED38A /* FifthSolutionViewController.h */,
+				B627B5232521C2A600DED38A /* FifthSolutionViewController.m */,
+				B6CC4D60253710E700C28BB7 /* CustomLabel.h */,
+				B6CC4D61253710E700C28BB7 /* CustomLabel.m */,
+			);
+			path = "运行时特性实现";
+			sourceTree = "<group>";
+		};
+		B6CC4D692537157A00C28BB7 /* 键盘上添加完成按钮 */ = {
+			isa = PBXGroup;
+			children = (
+				B627B5252521CF2E00DED38A /* UITextView+keyBoard.h */,
+				B627B5262521CF2E00DED38A /* UITextView+keyBoard.m */,
+			);
+			path = "键盘上添加完成按钮";
+			sourceTree = "<group>";
+		};
+		B6CC4D6A2537159100C28BB7 /* 输入限制实现 */ = {
+			isa = PBXGroup;
+			children = (
+				B627B5282521DBA900DED38A /* InputLimitViewController.h */,
+				B627B5292521DBA900DED38A /* InputLimitViewController.m */,
+			);
+			path = "输入限制实现";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
