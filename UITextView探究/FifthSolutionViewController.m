@@ -10,8 +10,11 @@
 #import "UITextView+keyBoard.h"
 #import <objc/runtime.h>
 #import <objc/message.h>
+#import "CustomLabel.h"
 
 @interface FifthSolutionViewController ()
+
+@property (nonatomic) CustomLabel *customLabel;
 
 @end
 
@@ -44,19 +47,27 @@
     [textView setBackgroundColor:[UIColor greenColor]];
     [textView setFont:[UIFont systemFontOfSize:18.f]];
     [self.view addSubview:textView];
-    UILabel *placeHolderLabel = [[UILabel alloc] init];
-    placeHolderLabel.text = @"请输入相应的内容";
-    placeHolderLabel.numberOfLines = 0;
-    placeHolderLabel.textColor = [UIColor lightGrayColor];
-    [placeHolderLabel sizeToFit];
     /*
      必须得加这句话，不然的话显示不出来
      */
-    [textView addSubview:placeHolderLabel];
+    [textView addSubview:self.customLabel];
 
     [textView setFont:[UIFont systemFontOfSize:18.f]];
-    placeHolderLabel.font = [UIFont systemFontOfSize:18.f];
-    [textView setValue:placeHolderLabel forKey:@"_placeholderLabel"];
+    self.customLabel.font = [UIFont systemFontOfSize:18.f];
+    [textView setValue:self.customLabel forKey:@"_placeholderLabel"];
+}
+
+- (CustomLabel *)customLabel {
+    if (_customLabel) {
+        return _customLabel;
+    }
+    _customLabel = [[CustomLabel alloc] init];
+    _customLabel.text = @"请输入相应的内容";
+    _customLabel.numberOfLines = 0;
+    _customLabel.textColor = [UIColor lightGrayColor];
+    _customLabel.edgeInsets = UIEdgeInsetsMake(0, 15, 0, 0);
+    [_customLabel sizeToFit];
+    return _customLabel;
 }
 
 @end

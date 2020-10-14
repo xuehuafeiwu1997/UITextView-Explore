@@ -22,6 +22,7 @@
 		B627B5242521C2A600DED38A /* FifthSolutionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B627B5232521C2A600DED38A /* FifthSolutionViewController.m */; };
 		B627B5272521CF2E00DED38A /* UITextView+keyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = B627B5262521CF2E00DED38A /* UITextView+keyBoard.m */; };
 		B627B52A2521DBA900DED38A /* InputLimitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B627B5292521DBA900DED38A /* InputLimitViewController.m */; };
+		B6CC4D62253710E700C28BB7 /* CustomLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CC4D61253710E700C28BB7 /* CustomLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,8 @@
 		B627B5262521CF2E00DED38A /* UITextView+keyBoard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+keyBoard.m"; sourceTree = "<group>"; };
 		B627B5282521DBA900DED38A /* InputLimitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputLimitViewController.h; sourceTree = "<group>"; };
 		B627B5292521DBA900DED38A /* InputLimitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputLimitViewController.m; sourceTree = "<group>"; };
+		B6CC4D60253710E700C28BB7 /* CustomLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomLabel.h; sourceTree = "<group>"; };
+		B6CC4D61253710E700C28BB7 /* CustomLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,8 @@
 				B627B5202521C1A400DED38A /* FourthSolutionViewController.m */,
 				B627B5222521C2A600DED38A /* FifthSolutionViewController.h */,
 				B627B5232521C2A600DED38A /* FifthSolutionViewController.m */,
+				B6CC4D60253710E700C28BB7 /* CustomLabel.h */,
+				B6CC4D61253710E700C28BB7 /* CustomLabel.m */,
 				B627B5252521CF2E00DED38A /* UITextView+keyBoard.h */,
 				B627B5262521CF2E00DED38A /* UITextView+keyBoard.m */,
 				B627B5282521DBA900DED38A /* InputLimitViewController.h */,
@@ -233,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B627B5212521C1A400DED38A /* FourthSolutionViewController.m in Sources */,
+				B6CC4D62253710E700C28BB7 /* CustomLabel.m in Sources */,
 				B627B4D8252070FF00DED38A /* XMYPlaceHolderTextView.m in Sources */,
 				B627B4EA2520AE5B00DED38A /* MainViewController.m in Sources */,
 				B627B5272521CF2E00DED38A /* UITextView+keyBoard.m in Sources */,
